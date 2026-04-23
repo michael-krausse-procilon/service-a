@@ -43,4 +43,5 @@ spec:
         name: MIT
     servers:
       - url: http://artist.spotify.net/v1
+    paths: {}
 
