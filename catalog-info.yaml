@@ -27,6 +27,19 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  name: backstage-service
+  description: |
+    backstage-service
+spec:
+  type: service
+  owner: teama
+  lifecycle: production
+  consumesApis:
+    - backstage-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
   name: backstage-consumer
   description: |
     Consumes data of backstage
