@@ -19,6 +19,19 @@ metadata:
     lighthouse.com/website-url: https://backstage.io
 spec:
   type: library
-  owner: team-a
+  owner: teama
   lifecycle: production
+  providesApis:
+    - 
+---  
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backstage-api
+  description: waste cpu cycle
+spec:
+  type: openapi
+  lifecycle: production
+  owner: teama
+  system: artist-engagement-portal
 
