@@ -23,6 +23,20 @@ spec:
   lifecycle: production
   providesApis:
     - backstage-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-consumer
+  description: |
+    Consumes data of backstage
+spec:
+  type: library
+  owner: teama
+  lifecycle: production
+  consumesApis:
+    - backstage-api
+
 ---  
 apiVersion: backstage.io/v1alpha1
 kind: API
